@@ -1,0 +1,182 @@
+Question :1
+
+Code:
+
+let MyDetailes = {
+  Myname: "Abahy Kumar",
+  City: "Noida",
+  State: "Utter Prades",
+  Education: "Graduate",
+  Age: "24",
+  Gender: "Male",
+  Hobbies: "Playing Out Door Games",
+  Mobilephone: "9999-895-695",
+  Myemail: "Kumarabhay401@gmail.com",
+};
+
+// for in loop jason
+for (let details in MyDetailes) {
+  console.log(details);
+}
+console.log("******************************");
+for (let detailmy in MyDetailes) {
+  console.log(MyDetailes[detailmy]);
+}
+console.log("******************************");
+for (key in MyDetailes) {
+  console.log(`Keys:- ${key},       Value:- ${MyDetailes[key]}`);
+}
+
+//for of loop jason
+console.log("******************************");
+// of loop in array jason
+let MyMarks = [20, 10, 40, 50];
+for (mark of MyMarks) {
+  console.log(mark);
+}
+
+// of loop in string
+let Mystring = "Abhay";
+let add = "";
+for (string of Mystring) {
+  add = string;
+  console.log(add);
+}
+let sum = 0;
+for (add of MyMarks) {
+  sum += add;
+  console.log(sum);
+}
+
+
+console.log("*************forEach loop*****************")
+
+let fruits = ["Apple", "Banana", "Orange", "Mango"];
+fruits.forEach(MyFunction);
+
+function MyFunction(item) {
+  console.log(item);
+}
+
+let DayTemperature =[23,43,56,22,32];
+DayTemperature.forEach(MyData);
+function MyData(item,index) {
+   item;
+    console.log(item,"Index ",index);
+}
+
+
+Ans;
+Myname
+57 City
+57 State
+57 Education
+57 Age
+57 Gender
+57 Hobbies
+57 Mobilephone
+57 Myemail
+59 ******************************
+61 Abahy Kumar
+61 Noida
+61 Utter Prades
+61 Graduate
+61 24
+61 Male
+61 Playing Out Door Games
+61 9999-895-695
+61 Kumarabhay401@gmail.com
+63 ******************************
+65 Keys:- Myname,       Value:- Abahy Kumar
+65 Keys:- City,       Value:- Noida
+65 Keys:- State,       Value:- Utter Prades
+65 Keys:- Education,       Value:- Graduate
+65 Keys:- Age,       Value:- 24
+65 Keys:- Gender,       Value:- Male
+65 Keys:- Hobbies,       Value:- Playing Out Door Games
+65 Keys:- Mobilephone,       Value:- 9999-895-695
+65 Keys:- Myemail,       Value:- Kumarabhay401@gmail.com
+69 ******************************
+73 20
+73 10
+73 40
+73 50
+81 A
+81 b
+81 h
+81 a
+81 y
+86 20
+86 30
+86 70
+86 120
+90 *************forEach loop*****************
+96 Apple
+96 Banana
+96 Orange
+96 Mango
+103 23 'Index ' 0
+103 43 'Index ' 1
+103 56 'Index ' 2
+103 22 'Index ' 3
+103 32 'Index ' 4
+
+******************************************************************************************************************
+
+
+Question :2 Create your own resume data in JSON format
+
+Code:
+let Person={
+    FirstName: 'Abhay',
+    LastName: 'Kumar'
+
+}
+let address ={
+    City: 'San Francisco',
+    District: 'GB Nagar',
+    myState: 'Delhi'
+}
+
+let myEducation ={
+    Bachelor: 'B.Com',
+    Highschool: 'PCM'
+}
+
+let myExperience={
+    InLge:"3 Years",
+    InAxisBank: "1 Year",
+    InSagebeans:"Present"
+}
+//Console.log("*********** My Profile******************");
+
+for(let MyName in Person){
+    console.log(Person[MyName]);
+}
+//Console.log("***********Adress Part******************");
+for (let MyAdd in address){
+    console.log(address[MyAdd]);
+}
+//Console.log("***********Education Part******************");
+for(let MyEdu in myEducation){
+    console.log(myEducation[MyEdu]);
+}
+
+//Console.log("***********Experience Part******************");
+for (let myExpe in myExperience){
+    console.log(myExperience[myExpe]);
+}
+
+Ans:
+Abhay
+Kumar
+San Francisco
+GB Nagar
+Delhi
+B.Com
+PCM
+3 Years
+1 Year
+Present
+
+************************************************************************************************************
